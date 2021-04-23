@@ -7,6 +7,8 @@ class QfsDarwin223X8664 < Formula
   sha256 "5b4f954dae0d7206d8bf8fd6fdf1ab156aabbe813769e10dbcc0d54cdef4bf90"
   license "Apache-2.0"
 
+  depends_on "boost"
+
   def install
     system "mkdir -p #{prefix}"
     system "cp -r . #{prefix}"
